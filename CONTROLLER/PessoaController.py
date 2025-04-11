@@ -1,4 +1,3 @@
-# PessoaController.py
 from MODEL.PessoaModel import Pessoa, PessoaModel
 
 class PessoaController:
@@ -9,7 +8,6 @@ class PessoaController:
         return self.model.listar_todos()
 
     def criar_pessoa(self, data):
-        # Espera data = {"id":..., "nome":..., "fone":..., "aniversario":...}
         pessoa = Pessoa(
             pid=data["id"],
             nome=data["nome"],
